@@ -1,42 +1,100 @@
-# Analytics à la Carte
+# The Location Effect
 
-## Project Overview
+## 1. Introduction
+This project analyzes the sales performance of two restaurants in Panama to identify opportunities for improvement and provide actionable recommendations to increase revenue. The two restaurants differ significantly in location and customer demographics, offering a valuable case study on how external factors like location impact sales performance.
 
+## 2. Dataset Description
 
-## What We Did
-1. **Data Exploration and Cleaning**:
-   - Explored 
+**Data Source**: The dataset was provided by the restaurant owners and includes detailed records of sales, product categories, and customer purchasing behavior.
 
-2. **Performance Metrics and KPIs**:
-   - **Completion Rates**: Calculated the proportion of clients who completed the process (67.7% overall). Analyzed differences between Test (69.3%) and Control (65.6%) groups.
-   - **Time Spent on Each Step**: Measured the average time clients spent on each step, identifying Steps 2 and 3 as potential bottlenecks.
-   - **Error Rates**: Found that 29.95% of clients experienced at least one backward step, indicating areas of confusion in the process.
+**Key Variables**:
+- Category 1: High-level product groupings (e.g., Appetizers, Main Courses, Desserts).
+- Category 2: Broad classifications (e.g., Food, Non-Alcoholic, Alcoholic Beverages).
+- Sales Data: Total revenue and units sold for each product.
+- Timestamps: Date and time of transactions for trend analysis.
 
-3. **Behavior Analysis**:
-   - Found that 
+## 3. Data Cleaning Process
 
-4. **Hypothesis Testing**:
-   - Conducted statistical tests (e.g., Two-proportion Z-test) to confirm that the higher completion rate in the Test group was statistically significant.
-   - Performed ANOVA and Tukey’s HSD tests to evaluate differences in client balances across groups, identifying significant imbalances that may impact fairness.
+1. **Standardized Text Formats**: Adjusted text formatting to ensure consistency, converting all-uppercase and all-lowercase entries to title case.
+2. **Removed Empty Records**: Deleted rows containing null or empty values to maintain data quality.
+3. **Filtered Irrelevant Data**: Removed information not relevant to this analysis.
+4. **Categorized Products**:
+   - Sorted Category 2 into Food, Non-Alcoholic Beverages, and Alcoholic Beverages.
+   -Reorganized Category 1 by correctly assigning items to classifications like Appetizers, Main Courses, and Desserts.
 
-5. **Experiment Evaluation**:
-   - Assessed experiment structure, randomization, and potential biases.
-   - Highlighted the importance of addressing initial imbalances in client demographics and balances for future experiments.
+## 4. Methodology
 
-6. **Visualization**:
-   - Created Tableau dashboards to visualize results and support decision-making.
-   - Visualizations highlighted completion rates, step durations, and error rates across client groups.
+**Exploratory Data Analysis (EDA)**:
+- Used visualizations to uncover trends in sales by category, day, and hour.
 
-## Deliverables
-- A comprehensive analysis report detailing findings, conclusions, and recommendations.
-- [Tableau dashboard](https://public.tableau.com/app/profile/bru.brugera/viz/VanguardTableau/VanguardTableau) visualizing key insights.
-- Jupyter notebooks with code for data exploration, testing, and evaluation.
-- A [Results document](https://github.com/bruhu/vanguard-cx-project/blob/main/notebooks/results.ipynb) gathering all the insights and a detailed step-by-step with all the analyses performed.
-- A clear and concise README summarizing the project.
-- A project presentation outlining main results and actionable insights.
+**Forecasting**:
+- Implemented time series forecasting (Prophet) to predict future sales trends.
 
-## Key Insights and Recommendations
-- The Test group had a statistically significant higher completion rate than the Control group, indicating the new design's effectiveness.
-- Steps 2 and 3 require optimization to reduce client effort and improve process efficiency.
-- Addressing high error rates (29.95%) and imbalances in initial client demographics and balances is critical for future experiments.
-- Further segmentation of clients and analysis of drop-off points can help enhance the user experience.
+**Comparative Analysis**:
+- Compared performance across categories, products, and locations.
+
+**Insight Extraction**:
+- Identified top-performing products and key customer behaviors.
+
+## 5. Insights
+
+**Restaurant 1**:
+
+- **Product Performance**: Alcoholic beverages dominate sales (64%), with luxury items like Dom Perignon and Macallan driving the highest revenue per unit.
+
+- **Peak Times**:
+  - Fridays and Saturdays contribute 15% higher sales compared to Mondays.
+  - Peak activity occurs between 5 PM and 7 PM, with sales 20% above the daily average.
+
+- **Seasonal Trends**: December sales are projected to be 40% higher than June 2024.
+
+**Restaurant 2**:
+
+- **Balanced Revenue**: Alcoholic beverages (48%) lead sales but are closely followed by food (45%).
+- **Midweek Strength**:Best performance occurs on Fridays, with sales 10% higher than the weekly average.
+- **Challenges**: Lower visibility and foot traffic due to its alley location impact overall sales performance.
+
+## 6. Visualizations
+
+- **Category Sales**: Bar charts showing revenue distribution across Food, Non-Alcoholic, and Alcoholic categories.
+- **Weekly Trends**: Line graphs illustrating peak days for sales.
+- **Hourly Performance**: Circular charts highlighting key time windows for customer activity.
+- **Forecasting**: Predictive models showing December’s projected sales spike.
+
+## 7. Recommendations
+
+ **For Restaurant 1 **:
+
+- Host premium events leveraging the rooftop location.
+- Introduce seasonal menus to capitalize on December sales trends.
+- Promote high-margin items like luxury alcoholic beverages.
+- Focus marketing efforts on weekends to maximize peak traffic.
+- Improve non-alcoholic offerings to diversify revenue.
+- Highlight additional extras (e.g., sides, desserts) to increase ticket size.
+
+ **For Restaurant 2 **:
+
+- Improve the alley ambiance with better lighting and signage.
+- Offer affordable combo deals to attract budget-conscious customers.
+- Launch midweek promotions to capitalize on higher sales during those days.
+- Partner with delivery services to offset low foot traffic.
+- Promote premium alcoholic products like Don Julio 1942.
+- Introduce loyalty programs to encourage repeat visits.
+
+## 8. Conclusions
+
+The analysis confirms that location significantly impacts restaurant performance. Restaurant 1’s premium location drives higher revenue and profitability, while Restaurant 2 faces challenges due to its less favorable setting. However, both restaurants can improve their performance with tailored strategies to address their unique opportunities and challenges.
+
+## 9. Future Work
+
+- Incorporate cost data to calculate profit margins for a more comprehensive analysis.
+- Conduct customer surveys to understand preferences and improve menu offerings.
+- Use geospatial analysis to identify optimal locations for future restaurants.
+
+## 10. Repository Structure
+
+- dataset.csv: Original dataset provided by the restaurant owners.
+- cleaned_dataset.csv: Cleaned and organized dataset.
+- visualizations/: Folder containing all generated graphs.
+- analysis.ipynb: Jupyter Notebook with the complete analysis.
+- README.md: Documentation of the project (this file).
