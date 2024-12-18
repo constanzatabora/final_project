@@ -93,8 +93,7 @@ The analysis confirms that location significantly impacts restaurant performance
 
 ## 10. Repository Structure
 
-- dataset.csv: Original dataset provided by the restaurant owners.
 - cleaned_dataset.csv: Cleaned and organized dataset.
-- visualizations/: Folder containing all generated graphs.
-- analysis.ipynb: Jupyter Notebook with the complete analysis.
+- final_project_data.ipynb: Jupyter Notebook with Folder containing all generated graphs.
+- Forecast.ipynb: Jupyter Notebook with .
 - README.md: Documentation of the project (this file).
