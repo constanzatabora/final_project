@@ -15,55 +15,55 @@ This project analyzes the sales performance of two restaurants in Panama to iden
 
 ## 3. Data Cleaning Process
 
-1. **Standardized Text Formats**: Adjusted text formatting to ensure consistency, converting all-uppercase and all-lowercase entries to title case.
-2. **Removed Empty Records**: Deleted rows containing null or empty values to maintain data quality.
-3. **Filtered Irrelevant Data**: Removed information not relevant to this analysis.
-4. **Categorized Products**:
+1. Standardized Text Formats: Adjusted text formatting to ensure consistency, converting all-uppercase and all-lowercase entries to title case.
+2. Removed Empty Records: Deleted rows containing null or empty values to maintain data quality.
+3. Filtered Irrelevant Data: Removed information not relevant to this analysis.
+4. Categorized Products:
    - Sorted Category 2 into Food, Non-Alcoholic Beverages, and Alcoholic Beverages.
    -Reorganized Category 1 by correctly assigning items to classifications like Appetizers, Main Courses, and Desserts.
 
 ## 4. Methodology
 
-**Exploratory Data Analysis (EDA)**:
+Exploratory Data Analysis (EDA):
 - Used visualizations to uncover trends in sales by category, day, and hour.
 
-**Forecasting**:
+Forecasting:
 - Implemented time series forecasting (Prophet) to predict future sales trends.
 
-**Comparative Analysis**:
+Comparative Analysis:
 - Compared performance across categories, products, and locations.
 
-**Insight Extraction**:
+Insight Extraction:
 - Identified top-performing products and key customer behaviors.
 
 ## 5. Insights
 
 **Restaurant 1**:
 
-- **Product Performance**: Alcoholic beverages dominate sales (64%), with luxury items like Dom Perignon and Macallan driving the highest revenue per unit.
+- Product Performance: Alcoholic beverages dominate sales (64%), with luxury items like Dom Perignon and Macallan driving the highest revenue per unit.
 
-- **Peak Times**:
+- Peak Times:
   - Fridays and Saturdays contribute 15% higher sales compared to Mondays.
   - Peak activity occurs between 5 PM and 7 PM, with sales 20% above the daily average.
 
-- **Seasonal Trends**: December sales are projected to be 40% higher than June 2024.
+- Seasonal Trends: December sales are projected to be 40% higher than June 2024.
 
 **Restaurant 2**:
 
-- **Balanced Revenue**: Alcoholic beverages (48%) lead sales but are closely followed by food (45%).
-- **Midweek Strength**:Best performance occurs on Fridays, with sales 10% higher than the weekly average.
-- **Challenges**: Lower visibility and foot traffic due to its alley location impact overall sales performance.
+- Balanced Revenue: Alcoholic beverages (48%) lead sales but are closely followed by food (45%).
+- Midweek Strength:Best performance occurs on Fridays, with sales 10% higher than the weekly average.
+- Challenges: Lower visibility and foot traffic due to its alley location impact overall sales performance.
 
 ## 6. Visualizations
 
-- **Category Sales**: Bar charts showing revenue distribution across Food, Non-Alcoholic, and Alcoholic categories.
-- **Weekly Trends**: Line graphs illustrating peak days for sales.
-- **Hourly Performance**: Circular charts highlighting key time windows for customer activity.
+- Category Sales: Bar charts showing revenue distribution across Food, Non-Alcoholic, and Alcoholic categories.
+- Weekly Trends: Line graphs illustrating peak days for sales.
+- Hourly Performance: Circular charts highlighting key time windows for customer activity.
 - **Forecasting**: Predictive models showing December’s projected sales spike.
 
 ## 7. Recommendations
 
- **For Restaurant 1 **:
+ **For Restaurant 1**:
 
 - Host premium events leveraging the rooftop location.
 - Introduce seasonal menus to capitalize on December sales trends.
@@ -72,7 +72,7 @@ This project analyzes the sales performance of two restaurants in Panama to iden
 - Improve non-alcoholic offerings to diversify revenue.
 - Highlight additional extras (e.g., sides, desserts) to increase ticket size.
 
- **For Restaurant 2 **:
+ **For Restaurant 2**:
 
 - Improve the alley ambiance with better lighting and signage.
 - Offer affordable combo deals to attract budget-conscious customers.
