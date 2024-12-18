@@ -91,9 +91,11 @@ The analysis confirms that location significantly impacts restaurant performance
 - Conduct customer surveys to understand preferences and improve menu offerings.
 - Use geospatial analysis to identify optimal locations for future restaurants.
 
-## 10. Repository Structure
+## 10. Repository Structure & Deliverables
 
 - cleaned_dataset.csv: Cleaned and organized dataset.
-- final_project_data.ipynb: Jupyter Notebook with Folder containing all generated graphs.
-- Forecast.ipynb: Jupyter Notebook with .
+- data_preliminary_review.ipynb: Conducted an initial exploration to understand the structure and scope of the data. Also, identified key variables and metrics relevant to improving sales and operational efficiency for both restaurants.
+- final_project_data.ipynb: Jupyter Notebook containing all generated graphs, analysis, recommendations and conclusions.
+- restaurants_forecast.ipynb: Jupyter Notebook with sales predictions represented in months, weeks and days.
 - README.md: Documentation of the project (this file).
+- Project presentation outlining main results and actionable insights.
